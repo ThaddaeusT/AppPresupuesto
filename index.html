@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap V5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!--Style.css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>PRESUPUESTO APP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-12 pt-2 mb-2">
+                <div id="cajaPresupuesto" class="pb-2">
+                    <form>
+                        <label for="presupuesto" class="col-12">Ingresa tu presupuesto</label>
+                        <input type="number" name="presupuesto" id="presupuesto" class="col-12">
+                        <input type="button" value="añadir presupuesto" id="botonPresupuesto" class="col-12">
+                    </form>
+                </div>
+                <div id="cajaGasto">
+                    <form>
+                        <label for="nombreGasto" class="col-12">Ingresa tu gasto</label>
+                        <input type="text" name="nombreGasto" id="nombreGasto" class="col-12">
+                        <label for="gasto" class="col-12 pt-2">Ingresa el monto</label>
+                        <input type="number" name="gasto" id="gasto" class="col-12">
+                        <input type="button" value="añadir gasto" id="botonGasto" class="col-12">
+                    </form>
+                </div>
+            </div>
+            <div class="column col-sm-12 pt-3">
+                <div id="cajaResumen" class="row">
+                    <div id="presupuesto" class="col-4 text-center align-middle">
+                        <h5 class="h5 mb-0 pb-0">Presupuesto</h5>
+                        <h5 class="h5">$<span id="spanPresupuesto">0</span></h5>
+                    </div>
+                    <div id="gasto" class="col-4 text-center align-middle">
+                        <h5 class="h5 mb-0 pb-0">Gasto</h5>
+                        <h5 class="h5">$<span id="spanGasto">0</span></h5>
+                    </div>
+                    <div id="saldo" class="col-4 text-center align-middle">
+                        <h5 class="h5 mb-0 pb-0">Saldo</h5>
+                        <h5 class="h5">$<span id="spanSaldo">0</span></h5>
+                    </div>
+                </div>
+                <div id="cajaDetalle" class="pt-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-8 text-center">Gasto</th>
+                                <th scope="col" class="col-3 text-center">Valor</th>
+                                <th scope="col" class="col-1 text-center"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaGastos">
+                            <tr>
+                                <!-- <th scope="row">Azucar</th>
+                                <td>$<span>1000</span></td>
+                                <td>X</td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap V5 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--Main.js-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    font-family: 'Righteous', cursive;
+}
+/* div, h5{
+    border: 1px black solid;
+} */
+
+#cajaResumen{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px rgb(134, 134, 134) solid;
+    border-radius: 10px;
+}
